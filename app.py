@@ -99,7 +99,7 @@ elif source_type == 'Upload Image':
             f.write(uploaded_image.read())
         st.success("Image uploaded. Processing...")
         annotated_image = process_image(temp_image_path)
-        st.image(cv2.cvtColor(annotated_image, cv2.COLOR_BGR2RGB), caption="Processed Image", use_column_width=True)
+        st.image(cv2.cvtColor(annotated_image, cv2.COLOR_BGR2RGB), caption="Processed Image", use_container_width=True)
 
 elif source_type == 'RTSP IP Camera':
     rtsp_url = st.text_input("Enter RTSP Stream URL", placeholder="rtsp://username:password@192.168.1.100:554/stream1")
@@ -118,3 +118,4 @@ if os.path.exists(LOG_FILE):
     st.download_button("📥 Download Full Log", data=df_logs.to_csv(index=False), file_name="violation_logs.csv", mime="text/csv")
 else:
     st.info("No violations logged yet.")
+
