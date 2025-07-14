@@ -15,11 +15,12 @@ CLASS_NAMES = model.names
 LOG_FILE = "violation_logs.csv"
 st.set_page_config(page_title="AI CCTV Surveillance", layout="wide")
 st.title("🎯 AI-Powered CCTV Surveillance System for Jyoti CNC")
-st.markdown("Detects anomalies, safety breaches, and human presence using video file, image, or IP CCTV camera (RTSP stream).")
+st.markdown("Detects anomalies, safety breaches, and human presence using video file or image upload.")
 
+# Input source (RTSP removed)
 source_type = st.sidebar.radio(
     "Select Input Source",
-    ['Upload Video', 'Upload Image', 'RTSP IP Camera']
+    ['Upload Video', 'Upload Image']
 )
 
 temp_dir = tempfile.mkdtemp()
@@ -45,7 +46,7 @@ def process_frame(frame):
             log_violation(class_name, confidence)
     return annotated_frame, results
 
-# Stream handler (RTSP or Video File)
+# Stream handler
 def display_video(video_source):
     cap = cv2.VideoCapture(video_source)
     st_frame = st.empty()
@@ -96,15 +97,6 @@ elif source_type == 'Upload Image':
         st.success("Image uploaded. Processing...")
         annotated_image = process_image(temp_image_path)
         st.image(cv2.cvtColor(annotated_image, cv2.COLOR_BGR2RGB), caption="Processed Image", use_container_width=True)
-
-elif source_type == 'RTSP IP Camera':
-    rtsp_url = st.text_input("Enter RTSP Stream URL", placeholder="rtsp://username:password@192.168.1.100:554/stream1")
-    if rtsp_url:
-        if st.button("Start RTSP Stream"):
-            try:
-                display_video(rtsp_url)
-            except Exception as e:
-                st.error(f"Unable to open RTSP stream: {e}")
 
 # Violation log viewer
 st.markdown("## 📄 Violation Logs")
