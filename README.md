@@ -66,7 +66,7 @@ It enhances the **reliability** and **responsiveness** of safety operations in i
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/your-username/ai-industrial-surveillance.git
+git clone https://github.com/paramjani/AI_FINAL.git
 
 # 2. Create and activate a virtual environment
 python -m venv venv
