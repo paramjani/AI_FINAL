@@ -42,7 +42,6 @@ This system uses **AI and deep learning** to ensure that workers are wearing req
 
 This system continuously monitors **live CCTV feeds** to automatically detect:
 
-* 🔺 Anomalies
 * ⚠️ Safety violations
 
 It enhances the **reliability** and **responsiveness** of safety operations in industrial settings.
