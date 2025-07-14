@@ -1,71 +1,150 @@
-AI-Based Industrial Safety & Surveillance System
-This repository contains two AI-powered surveillance solutions aimed at enhancing safety and
-efficiency in industrial environments. Developed as part of an industry-defined project in
-collaboration with Jyoti CNC Automation, Rajkot, the systems use computer vision to monitor PPE
-compliance and detect anomalies in real-time.
+Here is a **styling-modified version** of your GitHub README content, rewritten for clarity, professional formatting, and visual appeal using GitHub-flavored Markdown:
 
-Project 1: PPE Detection System
+---
 
-Title: AI-Powered PPE Detection System
+# 🚧 AI-Based Industrial Safety & Surveillance System
 
-Organization: Jyoti CNC Automation, Rajkot
+This repository contains two **AI-powered surveillance solutions** designed to enhance **safety** and **efficiency** in industrial environments. Developed in collaboration with **Jyoti CNC Automation, Rajkot**, these systems leverage **computer vision** for real-time **PPE compliance monitoring** and **anomaly detection**.
 
-Category: Industry Defined Problem
+---
 
-Description:
-The PPE Detection System utilizes AI and deep learning to detect whether workers are wearing
-essential personal protective equipment like helmets, masks, vests, and gloves. This real-time
-detection helps reduce accidents and ensures safety compliance on the shop floor.
+## 🛡️ Project 1: PPE Detection System
 
-Features:
-- Real-time detection of Helmets, Safety Vests, Face Masks, and Gloves
-- Webcam or IP camera integration
-- Upload and analyze video/image files
-- Live status dashboard using Streamlit
+### 🔷 Title: AI-Powered PPE Detection System
 
+**Organization:** Jyoti CNC Automation, Rajkot
+**Category:** Industry Defined Problem
 
-Project 2: Industrial CCTV Anomaly Surveillance
-Title: AI-Powered CCTV Surveillance for Industrial Process Monitoring
-Organization: Jyoti CNC Automation, Rajkot
-Category: Industry Defined Problem
-Description:
-This project introduces an AI-based system that monitors live CCTV feeds to automatically detect
-anomalies, safety violations, and workflow inefficiencies. It increases the reliability and
-responsiveness of industrial safety operations.
-Technologies Used:
-Python 3.9, YOLOv8 (Ultralytics), OpenCV, Streamlit, NumPy, Pandas
-Installation & Setup:
-1. git clone https://github.com/your-username/ai-industrial-surveillance.git
-2. python -m venv venv && source venv/bin/activate
-3. pip install -r requirements.txt
-4. streamlit run app.py
-Project Structure:
-- app.py: Streamlit app file
-- model/: YOLOv8 model files
-- utils/: Helper functions
-- static/: Images/videos
-- requirements.txt: Python dependencies
-- runtime.txt: For deployment
-Team Details:
-Group ID: G00171
-Team Members:
-- Kushal Alpesh Parekh - 22ce113@svitvasad.ac.in
-- Darshan Pardeshi - darshanpardeshi1654@gmail.com
-- Param V Jani - janiparam61@gmail.com
-- Darshan Panchal - mpdarshanpanchal001031@gmail.com
-- Jaymin Raval - ravaljaymin2908@gmail.com
-Future Scope:
-- Voice/Email/SMS alert system
-- Integration with ERP systems
-- Admin dashboard with analytics
-- Auto-upload violation videos
-- Multi-location camera feeds
-Achievements:
-- Used in real industrial case at Jyoti CNC
-- Demonstrated at college-level expo
-- Successfully tested with live feeds
-License: Academic and research use only.
-Acknowledgements:
-Ultralytics YOLOv8, OpenCV, Streamlit, Jyoti CNC, SVIT Vasad
-Contact:
-janiparam61@gmail.com | darshanpardeshi1654@gmail.com
+### 📄 Description
+
+This system uses **AI and deep learning** to ensure that workers are wearing required **Personal Protective Equipment (PPE)** — such as helmets, masks, vests, and gloves. It enables **real-time detection** to minimize workplace accidents and enforce compliance.
+
+### ✅ Features
+
+* 🟢 Real-time detection of:
+
+  * Helmets
+  * Safety Vests
+  * Face Masks
+  * Gloves
+* 🎥 Integration with **Webcam/IP Camera**
+* 📁 Upload and analyze **video/image files**
+* 📊 Live **status dashboard** with Streamlit
+
+---
+
+## 📹 Project 2: Industrial CCTV Anomaly Surveillance
+
+### 🔷 Title: AI-Powered CCTV Surveillance for Industrial Process Monitoring
+
+**Organization:** Jyoti CNC Automation, Rajkot
+**Category:** Industry Defined Problem
+
+### 📄 Description
+
+This system continuously monitors **live CCTV feeds** to automatically detect:
+
+* 🔺 Anomalies
+* ⚠️ Safety violations
+* 🛠️ Workflow inefficiencies
+
+It enhances the **reliability** and **responsiveness** of safety operations in industrial settings.
+
+---
+
+## ⚙️ Technologies Used
+
+* Python 3.9
+* [YOLOv8 (Ultralytics)](https://github.com/ultralytics/ultralytics)
+* OpenCV
+* Streamlit
+* NumPy, Pandas
+
+---
+
+## 🔧 Installation & Setup
+
+```bash
+# 1. Clone the repository
+git clone https://github.com/your-username/ai-industrial-surveillance.git
+
+# 2. Create and activate a virtual environment
+python -m venv venv
+source venv/bin/activate  # or venv\Scripts\activate on Windows
+
+# 3. Install required dependencies
+pip install -r requirements.txt
+
+# 4. Run the application
+streamlit run app.py
+```
+
+---
+
+## 📁 Project Structure
+
+```
+├── app.py               # Streamlit app
+├── model/               # YOLOv8 model files
+├── utils/               # Helper functions
+├── static/              # Images and videos
+├── requirements.txt     # Dependencies
+└── runtime.txt          # For deployment (e.g., Heroku)
+```
+
+---
+
+## 👨‍💻 Team Details
+
+**Group ID:** G00171
+
+| Name             | Email                                                                       |
+| ---------------- | --------------------------------------------------------------------------- |
+| Kushal A. Parekh | [22ce113@svitvasad.ac.in](mailto:22ce113@svitvasad.ac.in)                   |
+| Darshan Pardeshi | [darshanpardeshi1654@gmail.com](mailto:darshanpardeshi1654@gmail.com)       |
+| Param V. Jani    | [janiparam61@gmail.com](mailto:janiparam61@gmail.com)                       |
+| Darshan Panchal  | [mpdarshanpanchal001031@gmail.com](mailto:mpdarshanpanchal001031@gmail.com) |
+| Jaymin Raval     | [ravaljaymin2908@gmail.com](mailto:ravaljaymin2908@gmail.com)               |
+
+---
+
+## 🔮 Future Scope
+
+* 🔔 Voice/Email/SMS alert system
+* 🔗 Integration with ERP systems
+* 📊 Admin dashboard with analytics
+* 📤 Auto-upload violation clips
+* 📡 Multi-location camera support
+
+---
+
+## 🏆 Achievements
+
+* ✅ Used in **real industrial setup** at Jyoti CNC
+* 🎓 Presented at **college-level expo**
+* 📡 Successfully tested with **live camera feeds**
+
+---
+
+## 📜 License
+
+For **academic and research use** only.
+
+---
+
+## 🙏 Acknowledgements
+
+* [Ultralytics YOLOv8](https://github.com/ultralytics/ultralytics)
+* [OpenCV](https://opencv.org)
+* [Streamlit](https://streamlit.io)
+* Jyoti CNC Automation Pvt. Ltd.
+* SVIT Vasad
+
+---
+
+## 📬 Contact
+
+📧 [janiparam61@gmail.com](mailto:janiparam61@gmail.com)
+📧 [darshanpardeshi1654@gmail.com](mailto:darshanpardeshi1654@gmail.com)
+
+---
