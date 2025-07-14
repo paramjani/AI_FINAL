@@ -15,11 +15,11 @@ CLASS_NAMES = model.names
 LOG_FILE = "violation_logs.csv"
 st.set_page_config(page_title="AI CCTV Surveillance", layout="wide")
 st.title("🎯 AI-Powered CCTV Surveillance System for Jyoti CNC")
-st.markdown("Detects anomalies, safety breaches, and human presence using webcam, video file, image, or IP CCTV camera (RTSP stream).")
+st.markdown("Detects anomalies, safety breaches, and human presence using video file, image, or IP CCTV camera (RTSP stream).")
 
 source_type = st.sidebar.radio(
     "Select Input Source",
-    ['Webcam', 'Upload Video', 'Upload Image', 'RTSP IP Camera']
+    ['Upload Video', 'Upload Image', 'RTSP IP Camera']
 )
 
 temp_dir = tempfile.mkdtemp()
@@ -45,7 +45,7 @@ def process_frame(frame):
             log_violation(class_name, confidence)
     return annotated_frame, results
 
-# Stream handler (Webcam, RTSP, or Video File)
+# Stream handler (RTSP or Video File)
 def display_video(video_source):
     cap = cv2.VideoCapture(video_source)
     st_frame = st.empty()
@@ -87,10 +87,6 @@ if source_type == 'Upload Video':
         st.success("Video uploaded. Processing...")
         display_video(temp_video_path)
 
-elif source_type == 'Webcam':
-    if st.button("Start Webcam"):
-        display_video(0)
-
 elif source_type == 'Upload Image':
     uploaded_image = st.file_uploader("Upload an image file", type=["jpg", "jpeg", "png"])
     if uploaded_image:
@@ -118,4 +114,3 @@ if os.path.exists(LOG_FILE):
     st.download_button("📥 Download Full Log", data=df_logs.to_csv(index=False), file_name="violation_logs.csv", mime="text/csv")
 else:
     st.info("No violations logged yet.")
-
