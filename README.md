@@ -44,7 +44,6 @@ This system continuously monitors **live CCTV feeds** to automatically detect:
 
 * 🔺 Anomalies
 * ⚠️ Safety violations
-* 🛠️ Workflow inefficiencies
 
 It enhances the **reliability** and **responsiveness** of safety operations in industrial settings.
 
