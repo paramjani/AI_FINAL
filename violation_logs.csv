@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+ HEAD
 Timestamp,Violation,Confidence
 2025-07-14 19:05:02,NO-Mask,0.95
 2025-07-14 19:05:02,NO-Hardhat,0.84
@@ -616,4 +616,4 @@ Timestamp,Violation,Confidence
 2025-07-14 19:08:57,NO-Hardhat,0.55
 2025-07-14 19:08:57,NO-Mask,0.46
 2025-07-14 19:08:57,NO-Safety Vest,0.28
->>>>>>> ceccc87a0c5187c95b5d6d2b9026185df17ecd5c
+
