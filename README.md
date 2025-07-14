@@ -1,5 +1,3 @@
-Here is a **styling-modified version** of your GitHub README content, rewritten for clarity, professional formatting, and visual appeal using GitHub-flavored Markdown:
-
 ---
 
 # 🚧 AI-Based Industrial Safety & Surveillance System
