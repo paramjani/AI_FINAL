@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 import streamlit as st
 import cv2
 import tempfile
@@ -119,7 +119,7 @@ if os.path.exists(LOG_FILE):
     st.download_button("📥 Download Full Log", data=df_logs.to_csv(index=False), file_name="violation_logs.csv", mime="text/csv")
 else:
     st.info("No violations logged yet.")
-=======
+
 import streamlit as st
 import cv2
 import tempfile
@@ -233,4 +233,4 @@ if os.path.exists(LOG_FILE):
     st.download_button("📥 Download Full Log", data=df_logs.to_csv(index=False), file_name="violation_logs.csv", mime="text/csv")
 else:
     st.info("No violations logged yet.")
->>>>>>> ceccc87a0c5187c95b5d6d2b9026185df17ecd5c
+
