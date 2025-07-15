@@ -7,10 +7,6 @@ import time
 import pandas as pd
 from datetime import datetime
 
-# Optional voice alert
-import pyttsx3
-engine = pyttsx3.init()
-
 # Load YOLOv8 model
 MODEL_PATH = "best.pt"
 model = YOLO(MODEL_PATH)
