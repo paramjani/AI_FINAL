@@ -1,60 +1,75 @@
----
 
-# 🚧 AI-Based Industrial Safety & Surveillance System
+# 🛡️📹 AI-Powered Industrial Safety Surveillance System
 
-This repository contains two **AI-powered surveillance solutions** designed to enhance **safety** and **efficiency** in industrial environments. Developed in collaboration with **Jyoti CNC Automation, Rajkot**, these systems leverage **computer vision** for real-time **PPE compliance monitoring** and **anomaly detection**.
+## 🔷 Title: AI-Powered PPE & Anomaly Detection System for Industrial Safety
 
----
-
-## 🛡️ Project 1: PPE Detection System
-
-### 🔷 Title: AI-Powered PPE Detection System
-
-**Organization:** Jyoti CNC Automation, Rajkot
+**Organization:** Jyoti CNC Automation, Rajkot  
 **Category:** Industry Defined Problem
 
-### 📄 Description
+---
 
-This system uses **AI and deep learning** to ensure that workers are wearing required **Personal Protective Equipment (PPE)** — such as helmets, masks, vests, and gloves. It enables **real-time detection** to minimize workplace accidents and enforce compliance.
+## 📄 Project Overview
 
-### ✅ Features
+This project integrates **AI-powered Personal Protective Equipment (PPE) detection** and **CCTV-based anomaly surveillance** into a single real-time system. It is designed to improve **workplace safety**, **regulatory compliance**, and **operational efficiency** in industrial environments.
 
-* 🟢 Real-time detection of:
-
-  * Helmets
-  * Safety Vests
-  * Face Masks
-  * Gloves
-* 🎥 Integration with **Webcam/IP Camera**
-* 📁 Upload and analyze **video/image files**
-* 📊 Live **status dashboard** with Streamlit
+Using advanced **deep learning models** and **computer vision**, the system ensures that workers adhere to safety protocols and that unusual or unsafe activities are promptly flagged.
 
 ---
 
-## 📹 Project 2: Industrial CCTV Anomaly Surveillance
+## ✅ Key Features
 
-### 🔷 Title: AI-Powered CCTV Surveillance for Industrial Process Monitoring
+### 👷 PPE Detection Module
+- Real-time detection of:
+  - 🪖 Helmets  
+  - 😷 Face Masks  
+  - 👷 Safety Vests  
+  - 🧤 Gloves  
+- Supports live feed from **Webcam/IP Camera**
+- Upload and analyze **video/image files**
+- Detection logs with timestamps and confidence scores
 
-**Organization:** Jyoti CNC Automation, Rajkot
-**Category:** Industry Defined Problem
+### 📹 CCTV Anomaly Detection Module
+- Real-time detection of:
+  - 🚫 Entry into restricted zones  
+  - ⚠️ Safety violations (e.g., no helmet, improper behavior)  
+  - 🚷 Suspicious or unsafe movements  
+- Continuous monitoring via CCTV/IP camera
+- Alert generation on detection
 
-### 📄 Description
-
-This system continuously monitors **live CCTV feeds** to automatically detect:
-
-* ⚠️ Safety violations
-
-It enhances the **reliability** and **responsiveness** of safety operations in industrial settings.
+### 📊 Dashboard (Built with Streamlit)
+- Live status feed with detection results
+- Real-time preview of camera feed
+- Violation and compliance logs
+- Summary statistics and compliance reports
 
 ---
 
-## ⚙️ Technologies Used
+## 📦 Tech Stack
 
-* Python 3.9
-* [YOLOv8 (Ultralytics)](https://github.com/ultralytics/ultralytics)
-* OpenCV
-* Streamlit
-* NumPy, Pandas
+| Component       | Technology         |
+|----------------|--------------------|
+| 💡 AI Model     | YOLOv8 (Ultralytics) |
+| 🧠 Backend       | Python, OpenCV     |
+| 🌐 Frontend/UI  | Streamlit          |
+| 🎥 Video Input  | Webcam/IP Camera   |
+| 📊 Data Logging | Pandas, CSV Logs   |
+
+---
+
+## 🏭 Industrial Benefits
+
+- ✅ Automated compliance with PPE policies  
+- 🔍 Real-time safety monitoring  
+- 📉 Reduced accident risk and manual supervision  
+- 📊 Actionable insights from safety data  
+
+---
+
+## 📸 Sample Outputs
+
+- 📷 Detected image with PPE boxes  
+- 🧾 Logs with timestamp and violation type  
+- 📈 Streamlit dashboard with real-time updates  
 
 ---
 
