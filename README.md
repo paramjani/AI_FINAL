@@ -155,5 +155,7 @@ For **academic and research use** only.
 
 📧 [janiparam61@gmail.com](mailto:janiparam61@gmail.com)
 📧 [darshanpardeshi1654@gmail.com](mailto:darshanpardeshi1654@gmail.com)
-
+📧 [22ce113@svitvasad.ac.in](mailto:22ce113@svitvasad.ac.in)
+📧 [mpdarshanpanchal001031@gmail.com](mailto:mpdarshanpanchal001031@gmail.com)
+📧 [ravaljaymin2908@gmail.com](mailto:ravaljaymin2908@gmail.com)
 ---
