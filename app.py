@@ -129,3 +129,24 @@ if os.path.exists(LOG_FILE):
     st.download_button("📥 Download Full Log", data=df_logs.to_csv(index=False), file_name="violation_logs.csv", mime="text/csv")
 else:
     st.info("✅ No violations have been logged yet.")
+
+# 📚 Project Details Footer
+st.markdown("---")
+st.markdown("### 📌 Project Details")
+st.markdown("""
+**Project Title**: `AI-Powered CCTV Surveillance for Industrial Process Monitoring`  
+**Organisation**: `Jyoti CNC Automation, Rajkot`  
+**Category**: `Industry Defined Problem`  
+**Group ID**: `G00171`  
+
+**📋 Description**:  
+Security and disaster control rooms in industrial settings require 24/7 monitoring, which is resource-intensive and prone to human fatigue.  
+An AI-based surveillance system that analyzes CCTV footage in real-time can automatically detect anomalies, safety breaches, or inefficiencies in processes — enhancing operational safety and reducing the manpower required for continuous monitoring.
+
+**👥 Group Members**:
+- **Kushal Alpesh Parekh** – 22ce113@svitvasad.ac.in  
+- **Darshan Pardeshi** – darshanpardeshi1654@gmail.com  
+- **Param V Jani** – janiparam61@gmail.com  
+- **Darshan Panchal** – mpdarshanpanchal001031@gmail.com  
+- **Jaymin Raval** – ravaljaymin2908@gmail.com  
+""")
