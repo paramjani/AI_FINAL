@@ -7,6 +7,41 @@ import time
 import pandas as pd
 from datetime import datetime
 
+# Inject custom CSS for color and layout
+st.markdown("""
+    <style>
+    /* Background */
+    .main {
+        background-color: #F8F9FA;
+    }
+    /* Headings and layout */
+    h1, h2, h3 {
+        color: #2C3E50;
+    }
+    .stApp {
+        background-color: #F8F9FA;
+    }
+    .css-1d391kg {  /* Sidebar */
+        background-color: #E9ECEF !important;
+        padding: 20px;
+    }
+    /* Buttons */
+    .stButton > button, .stDownloadButton > button {
+        background-color: #2980B9;
+        color: white;
+        border-radius: 8px;
+        padding: 6px 14px;
+    }
+    /* Footer */
+    .footer-text {
+        font-size: 14px;
+        color: #6C757D;
+        text-align: center;
+        margin-top: 30px;
+    }
+    </style>
+""", unsafe_allow_html=True)
+
 # Load YOLOv8 model
 MODEL_PATH = "best.pt"
 model = YOLO(MODEL_PATH)
@@ -16,7 +51,7 @@ LOG_FILE = "violation_logs.csv"
 st.set_page_config(page_title="AI CCTV Surveillance", layout="wide")
 
 # 🎯 Main Title
-st.markdown("<h1 style='text-align: center; color: #2E8B57;'>🎯 AI-Powered CCTV Surveillance</h1>", unsafe_allow_html=True)
+st.markdown("<h1 style='text-align: center; color: #2C3E50;'>🎯 AI-Powered CCTV Surveillance</h1>", unsafe_allow_html=True)
 st.markdown("<h5 style='text-align: center; color: gray;'>For Jyoti CNC | Real-time detection of safety breaches, PPE violations, and human activity</h5>", unsafe_allow_html=True)
 st.markdown("---")
 
@@ -121,7 +156,7 @@ elif source_type == 'Upload Image':
 
 # 📄 Violation Log Display
 st.markdown("---")
-st.markdown("## 📄 Latest Violation Logs")
+st.markdown("<h3 style='color:#2C3E50;'>📄 Latest Violation Logs</h3>", unsafe_allow_html=True)
 
 if os.path.exists(LOG_FILE):
     df_logs = pd.read_csv(LOG_FILE)
@@ -132,21 +167,24 @@ else:
 
 # 📚 Project Details Footer
 st.markdown("---")
-st.markdown("### 📌 Project Details")
+st.markdown("<h3 style='color:#2C3E50;'>📌 Project Details</h3>", unsafe_allow_html=True)
+
 st.markdown("""
-**Project Title**: `AI-Powered CCTV Surveillance for Industrial Process Monitoring`  
-**Organisation**: `Jyoti CNC Automation, Rajkot`  
-**Category**: `Industry Defined Problem`  
-**Group ID**: `G00171`  
+**Project Title**: <span style='color:#2980B9;'>AI-Powered CCTV Surveillance for Industrial Process Monitoring</span>  
+**Organisation**: Jyoti CNC Automation, Rajkot  
+**Category**: Industry Defined Problem  
+**Group ID**: G00171  
 
 **📋 Description**:  
 Security and disaster control rooms in industrial settings require 24/7 monitoring, which is resource-intensive and prone to human fatigue.  
 An AI-based surveillance system that analyzes CCTV footage in real-time can automatically detect anomalies, safety breaches, or inefficiencies in processes — enhancing operational safety and reducing the manpower required for continuous monitoring.
 
 **👥 Group Members**:
-- **Kushal Alpesh Parekh** – 22ce113@svitvasad.ac.in  
-- **Darshan Pardeshi** – darshanpardeshi1654@gmail.com  
-- **Param V Jani** – janiparam61@gmail.com  
-- **Darshan Panchal** – mpdarshanpanchal001031@gmail.com  
-- **Jaymin Raval** – ravaljaymin2908@gmail.com  
-""")
+- Kushal Alpesh Parekh – 22ce113@svitvasad.ac.in  
+- Darshan Pardeshi – darshanpardeshi1654@gmail.com  
+- Param V Jani – janiparam61@gmail.com  
+- Darshan Panchal – mpdarshanpanchal001031@gmail.com  
+- Jaymin Raval – ravaljaymin2908@gmail.com  
+""", unsafe_allow_html=True)
+
+st.markdown("<p class='footer-text'>Developed by Final Year Computer Engineering Students, SVIT Vasad</p>", unsafe_allow_html=True)
