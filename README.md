@@ -1,8 +1,6 @@
 
 # 🛡️📹 AI-Powered Industrial Safety Surveillance System
 
-## 🔷 Title: AI-Powered PPE & Anomaly Detection System for Industrial Safety
-
 **Organization:** Jyoti CNC Automation, Rajkot  
 **Category:** Industry Defined Problem
 
